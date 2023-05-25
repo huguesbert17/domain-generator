@@ -14,7 +14,38 @@
   </head>
   <body>
     <div class="container-fluid text-center p-0">
-      <div class="wrapper"></div>
+      <div class="wrapper">
+        <div class="row">
+          <div class="col-12 col-md-4 mx-auto text-left">
+            <div class="form-group">
+              <label class="d-block" for="">Pronouns</label>
+              <input id="pron" class="form-control" placeholder="Pronouns" value="the, our">
+            </div>
+            <div class="form-group">
+              <label class="d-block" for="">Adjectives</label>
+              <input id="adj" class="form-control" placeholder="Adjectives" value="great, big">
+            </div>
+
+            <div class="form-group">
+              <label class="d-block" for="">Nouns</label>
+              <input id="nouns" class="form-control" placeholder="Nouns" value="jogger, racoon">
+            </div>
+
+            <div class="form-group">
+              <label class="d-block" for="">TLDs</label>
+              <input id="tlds" class="form-control" placeholder="TLDs" value=".com, .org, .net, .us, .io">
+            </div>
+            <button type="submit" id="generateDomains" class="btn btn-primary mt-4">Generate</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-4 mx-auto">
+            <ol id="results"></ol>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -1,14 +1,9 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
-.wrapper {
-  background-image: linear-gradient(
-    to left top,
-    #4d60e6,
-    #356ce8,
-    #1c77e7,
-    #0080e4,
-    #0088e0
-  );
-  height: 100vh;
-  width: 100%;
+label {
+  text-align: left;
+}
+li {
+  text-align: left;
+  padding: 5px 0;
 }
