@@ -42,12 +42,21 @@ function handleGenerate(e) {
     .filter(item => item !== "");
 
   let ol = "";
-  const domains = generator(pronoun, adj, noun, tld);
+  const domains = generator(pronoun, adj, hack(noun), tld);
 
   domains.forEach(item => {
     ol += `<li>${item}</li>`;
   });
   results.innerHTML = ol;
+  results.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+    inline: "nearest"
+  });
+}
+
+function hack(no) {
+  return no.filter(item => tld.indexOf(`.${item}`) === -1);
 }
 
 function generator(...args) {
